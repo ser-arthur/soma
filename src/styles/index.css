@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+:root {
+    --color-nexus-moss: #064e3b;      /* Primary: Deep Green */
+    --color-nexus-indigo: #4338ca;    /* Accent: Action Blue */
+    --color-nexus-slate: #f8fafc;     /* Background */
+    --color-nexus-text: #0f172a;      /* Slate 900 */
+}
+
+body {
+    background-color: var(--color-nexus-slate);
+    color: var(--color-nexus-text);
+    font-family: 'Inter', system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* High-end Card Styling */
+.card-nexus {
+    background: white;
+    border-radius: 28px; /* Extra rounded for that modern posh look */
+    border: 1px solid rgba(226, 232, 240, 0.6);
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.02), 0 8px 10px -6px rgba(0, 0, 0, 0.02);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card-nexus:hover {
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.04);
+    transform: translateY(-2px);
+}
+
+/* Typography for "Posh" feel */
+.text-institutional {
+    letter-spacing: -0.025em;
+    font-weight: 850;
+    color: #0f172a;
+}
+
+.label-caps {
+    font-size: 10px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: #64748b;
+}
